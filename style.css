@@ -195,3 +195,64 @@
     right: 20%;
   }
 }
+
+.ex-13-button:hover .ex-13-top-white {
+  animation: muovi2-dx 3s linear infinite;
+}
+
+@keyframes muovi2-dx {
+  0% {
+    left: 10%;
+    top: -10px;
+  }
+  20%{
+    left: calc(100% - 30px);
+    top: -10px;
+  }
+  40%{
+    left: calc(100% - 30px);
+    top: calc(100% - 10px);
+  }
+  60% {
+    left: -10px;
+    top: calc(100% - 10px);
+  }
+  80%{
+    left: -10px;
+    top: -10px;
+  }
+  100% {
+    left: 10%;
+    top: -10px;
+  }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: muovi2-sx 3s linear infinite;
+}
+
+@keyframes muovi2-sx {
+  0% {
+    right: 20%;
+    bottom: -10px;
+  }
+  20% {
+    right: calc(100% - 30px);
+    bottom: -10px;
+  }
+  40% {
+    right: calc(100% - 30px);
+    bottom: calc(100% - 10px);
+  }
+  60% {
+    right: -10px;
+    bottom:  calc(100% - 10px);
+  }
+  80% {
+    right: -10px;
+    bottom: -10px;
+  }
+  100% {
+    right: 20%;
+  }
+}
